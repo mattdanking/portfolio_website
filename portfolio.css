@@ -1,0 +1,109 @@
+#main {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  height:auto;
+  border:4px;
+  font-family:Arial;
+  font-weight:bold;
+  font-size:14px;
+}
+
+#left {
+  float:left;
+  width:0px;
+  order:0;
+  background-color:white;
+  color:white;
+  text-align:center;
+  font-family:Arial;
+  font-weight:bold;
+  font-size:14px;
+
+}
+
+#middle {
+  flex-grow:10;
+  order:1;
+  background-color: #f2f2f2;
+  color:black;
+  font-family:Arial;
+  font-weight:bold;
+  font-size:14px;
+  text-align:center;
+}
+
+#right {
+  float:right;
+  width:0px;
+  order:2;
+  background-color: white;
+  color:white;
+  font-family:Arial;
+  font-weight:bold;
+  font-size:14px;
+}
+
+img[alt="Profile"] {
+  border-radius: 60px;
+}
+
+#bg-image {
+  background: url(grafitti.JPG);
+  background-size: cover;
+  height:800px;
+  position:relative;
+}
+
+/*#bg-image img {
+  display:block;
+  max-width:100%;
+  height:auto;
+}*/
+
+#about {
+  position:absolute;
+  top: 10em;
+  right: 10em;
+  bottom:20em;
+  height:auto;
+  width: 400px;
+  background-color: white;
+  opacity: 60%;
+  color:black;
+}
+
+
+#header {
+  background-color:white;
+  height:80px;
+}
+
+#header h1 {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:bold;
+  font-size:34px;
+  text-align: center;
+}
+
+#header h4 {
+  text-align: right;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-right: 0;
+}
+
+#footer {
+  clear:both;
+  background-color: #cccccc;
+  height:100px;
+  text-align:right;
+  vertical-align: middle;
+  padding-right: 40px;
+  padding-top: 20px;
+  color:white;
+  font-family:Arial;
+  font-weight:bold;
+  font-size:14px;
+} 
