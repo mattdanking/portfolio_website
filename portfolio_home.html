@@ -4,38 +4,90 @@
 <head>
   <title> Portfolio Website: Matthew King </title>
   <link rel="stylesheet" type="text/css" href="portfolio.css"
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
 <body>
+<div id="wrapper">
   <nav id="header">
-    <h1> Matt King </h1>
-    <h4>
-      <a href="https://github.com/mattdanking"> Projects </a>
-    </h4>
+    <div id="name">
+      <h1> MATT KING </h1>
+      <h4 id="tags"> JUNIOR DEVELOPER | DATA ANALYST | CREATIVE THINKER </h4>
+    </div>
+    <!-- <div id="menu"
+      <ul>
+        <li> <a href="#"> About </a> </li>
+        <li> <a href="https://github.com/mattdanking"> Projects </a> </li>
+        <li> <a href="#"> Contact </a> </li>      
+      </ul>
+    </div> -->
   </nav>
 
-  <div id="main">
+  <div id="content">
 
-    <aside id="left"></aside>
+    <aside id="top">
+      <div id="projects"> 
+          <div class="title">
+            <h2>
+            PROJECTS
+            </h2>
+          </div>
+          <div class="projitem">
+            <h2>
+              COCO MILLIONAIRE
+            </h2>
+            <a href="https://gist.github.com/mattdanking/60916c6399ef2a1c4109"><img src="coconut.jpg" style="height:10em;width:10em"> </a>
+          </div>
+          <div class="projitem">
+            <h2>
+              VOTER SIMULATION
+            </h2>
+            <a href="https://gist.github.com/mattdanking/68ac7c856114034f73ef"><img src="check.png" style="height:10em;width:10em"> </a>
+          </div>
+
+        </div>
+
+    </aside>
 
     <section id="middle">
-      <div id="bg-image">
-        <div id="about"> 
+      <div class="title">
+        <h1>
+          ABOUT ME
+        </h1>
+      </div>
+      <div id="about"> 
+        <div>
           <p>
-            ABOUT ME TEXT
+            Matt is a 25 year old Florida native - lover of spending the sunny days outdoors and the quiet nights indoors. He is always up for the challenge of working through complex problems and is passionate about using open data to solve real-world issues. Matt joined Wyncode's Miami Cohort 8 to gain the full-stack development skills necessary to take ideas from imagination to paper. Feel free to connect if you are interested in working professionally or share similar aspirations.
           </p>
         </div>
-        </div>
+      </div>
     </section>
 
-    <aside id="right"></aside>
+    <aside id="bottom">
+      <div id="contacts"> 
+          <div class="title">
+            <h1> GET IN TOUCH </h1>
+          </div>
+          <div class="contactitem"> <a href="emailto:mattdanking@gmail.com"> <img src="email.png" style="height:10em;width:10em"> </a> </div>
+          <div class="contactitem"> <a href="https://www.linkedin.com/in/mattdanking"> <img src="linkedin.png" style="height:8em;width:8em"> </a> </div>
+          <div class="contactitem"> <a href="https://github.com/mattdanking"> <img src="github.png" style="height:8em;width:8em"> </a> </div>
+          <div class="contactitem"> <a href="https://twitter.com/mattdanking"> <img src="twitter.png" style="height:7em;width:8em"> </a> </div>
+
+        </div>
+
+    </aside>
 
   </div>
 
   <footer id="footer">
-    <img src="profile.JPG" alt="Profile" class="img-circle" style="width:60px;height:60px;">
 
+    <!-- <img src="profile.JPG" alt="Profile" class="img-circle" style="width:60px;height:60px;"> -->
+    <!-- <img src="copyright.png" alt="copyright" style="width:">  -->
+    <h6> &copy; Matthew Daniel King </h6>
   </footer>
+
+</div>
 </body>
 
 </html>
