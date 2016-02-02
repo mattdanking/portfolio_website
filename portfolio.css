@@ -11,6 +11,28 @@ body {
   position:relative;
 }
 
+#header {
+  display: inline;
+  background: white;
+  height: 80px;
+  opacity: 0.95;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#name {
+  height:110px;
+}
+
+#name h1 {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:bold;
+  font-size:44px;
+  letter-spacing: 1.5em;
+  font-weight: bold;
+}
 
 #content {
   display:flex;
@@ -29,6 +51,7 @@ body {
   text-align: center;
   font-family: Helvetica, sans-serif;
   font-weight: lighter;
+  padding-bottom: 10em;
 }
 
 #top {
@@ -51,23 +74,24 @@ body {
   color:white;
   font-weight: bold;
   font-size: 44px;
-  text-shadow: 0px 0 black, 0 2px black, 2px 0 black, 0 -0px black;
+  text-shadow: 1px 0 black, 0 3px black, 3px 0 black, 0 1px black;
 }
 
 div p {
-  margin: 4em 2em;
+  margin: 5em 2em;
   font-size: 16px;
   line-height: 2em;
+  font-weight: lighter;
 }
 
 div h2 {
   font-size: 44px;
   color: white;
-  text-shadow: 0px 0 black, 0 2px black, 2px 0 black, 0 -0px black;
+  text-shadow: 1px 0 black, 0 3px black, 3px 0 black, 0 1px black;
 }
 
 div h3 {
-  margin-top: 2em;
+  margin-top: 1em;
   color: black;
   font-family: Helvetica, sans-serif;
   letter-spacing: 0.5em;
@@ -76,32 +100,36 @@ div h3 {
 
 div img {
   margin-top: 2em;
+}
 
+a:hover .overlay {  
+  background:rgba(0,.5,1,.75);
+  text-align:center;
+  padding: 0;
+  opacity:0.8;
+  -webkit-transition: opacity;
 }
 
 #projects {
-  margin: 4em auto;
-  height: 400px;
+  margin: -2em auto;
+  height: 330px;
   width: 90%;
   background-color: white;
   border: solid;
   border-left: 0;
   border-right: 0;
-  opacity: 0.99;
+  opacity: 0.98;
   color:black;
 }
 
 .projitem {
-  margin: 0 auto;
-  margin-left: 4em;
-  margin-right: 4em;
-  margin-bottom: 10em;
-  float: left;
+  display: inline-block;
+  margin: 4em 3em;
   border:solid;
   border-left: 0;
   border-right: 0;
   width:40%;
-  height:60%;
+  height:70%;
   
 }
 
@@ -141,7 +169,7 @@ img[alt="Profile"] {
   height: 400px;
   width: 600px;
   background-color: white;
-  opacity: 0.99;
+  opacity: 0.98;
   color:black;
 }
 
@@ -159,34 +187,6 @@ img[alt="Profile"] {
   margin-left: 3em;
   margin-right: 2em;
 }
-
-#header {
-  display: inline;
-  background: white;
-  height: 80px;
-  opacity: 0.95;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-#name {
-  height:100px;
-}
-
-#name h1 {
-  text-align: center;
-  vertical-align: text-top;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight:bold;
-  font-size:34px;
-  letter-spacing: 2em;
-  font-weight: bold;
-}
-
-/*#menu {
-  float: left;
-}*/
 
 ul {
   display: inline;
@@ -209,13 +209,14 @@ footer {
   bottom:0;
   margin-bottom: -100px;
   background-color: black;
-  opacity: 0.95;
+  opacity: 1;
   height:100px;
   width: 100%;
   text-align:center;
 } 
 
 footer h6 {
+  vertical-align: -20px; 
   text-align: center;
   color:white;
   font-size: 16px;
