@@ -1,222 +1,95 @@
-body {
-  background-attachment: scroll;
-  padding: 0;
-  margin: 0;
-}
+<!DOCTYPE html>
+<html>
 
-#wrapper {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  position:relative;
-}
+<head>
+  <title> Portfolio Website: Matthew King </title>
+  <link rel="stylesheet" type="text/css" href="portfolio.css"
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
 
+<!-- Header, Content, Footer
+ 
+ Content/Home
+ Projects - Link to Gists
+ About - short bio
+ Connect - email, linkedin, git, twitter
 
-#content {
-  display:flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background: url(wall.jpg);
-  background-size: cover;
-  border: solid;
-  height: 1800px;
-  margin: 0;
-  width: auto;
-  margin-bottom: 100px;
-}
+-->
 
-#tags {
-  text-align: center;
-  font-family: Helvetica, sans-serif;
-  font-weight: lighter;
-}
+<body>
+<div id="wrapper">
+  <nav id="header">
+    <div id="name">
+      <h1> MATT KING </h1>
+      <h4 id="tags"> JUNIOR DEVELOPER | DATA ANALYST | CREATIVE THINKER </h4>
+    </div>
+  </nav>
 
-#top {
-  flex-grow: 0.2;
-  order:0;
-  color:white;
-  text-align:center;
-  font-family:Helvetica;
-  font-weight:bold;
-  font-size:14px;
+  <div id="content">
 
-}
+    <aside id="top">
+      <div id="projects"> 
+          <div class="title">
+            <h2>
+            PROJECTS
+            </h2>
+          </div>
+          <div class="projitem">
+            <a href="https://gist.github.com/mattdanking/60916c6399ef2a1c4109"><img src="coconut.jpg" style="height:10em;width:10em"> </a>
+            <h3>
+              REPL GAME
+            </h3>
+          </div>
+          <div class="projitem">
+            <a href="https://gist.github.com/mattdanking/68ac7c856114034f73ef"><img src="check.png" style="height:10em;width:10em"> </a>
+            <h3>
+              VOTER SIMULATION
+            </h3>
+          </div>
 
-.title {
-  display:block;
-  font-size: 20px;
-}
+        </div>
 
-.title h1 {
-  color:white;
-  font-weight: bold;
-  font-size: 44px;
-  text-shadow: 0px 0 black, 0 2px black, 2px 0 black, 0 -0px black;
-}
+    </aside>
 
-div p {
-  margin: 4em 2em;
-  font-size: 16px;
-  line-height: 2em;
-}
+    <section id="middle">
+      <div class="title">
+        <h1>
+          ABOUT ME
+        </h1>
+      </div>
+      <div id="about"> 
+        <div>
+          <p>
+            Matt is a 25 year old Florida native - lover of spending the sunny days outdoors and the quiet nights indoors. He is always up for the challenge of working through complex problems and is passionate about using open data to solve real-world issues. Matt joined Wyncode's Miami Cohort 8 to gain the full-stack development skills necessary to take ideas from imagination to paper. Feel free to connect if you are interested in working professionally or share similar aspirations.
+          </p>
+        </div>
+      </div>
+    </section>
 
-div h2 {
-  font-size: 44px;
-  color: white;
-  text-shadow: 0px 0 black, 0 2px black, 2px 0 black, 0 -0px black;
-}
+    <aside id="bottom">
+      <div id="contacts"> 
+          <div class="title">
+            <h1> CONNECT </h1>
+          </div>
+          <div class="contactitem"> <a href="emailto:mattdanking@gmail.com"> <img src="email.png" style="height:10em;width:10em"> </a> </div>
+          <div class="contactitem"> <a href="https://www.linkedin.com/in/mattdanking"> <img src="linkedin.png" style="height:8em;width:8em"> </a> </div>
+          <div class="contactitem"> <a href="https://github.com/mattdanking"> <img src="github.png" style="height:8em;width:8em"> </a> </div>
+          <div class="contactitem"> <a href="https://twitter.com/mattdanking"> <img src="twitter.png" style="height:7em;width:8em"> </a> </div>
 
-div h3 {
-  margin-top: 2em;
-  color: black;
-  font-family: Helvetica, sans-serif;
-  letter-spacing: 0.5em;
-  /*margin-bottom: 4em;*/
-}
+        </div>
 
-div img {
-  margin-top: 2em;
+    </aside>
 
-}
+  </div>
 
-#projects {
-  margin: 4em auto;
-  height: 400px;
-  width: 90%;
-  background-color: white;
-  border: solid;
-  border-left: 0;
-  border-right: 0;
-  opacity: 0.99;
-  color:black;
-}
+  <footer id="footer">
 
-.projitem {
-  margin: 0 auto;
-  margin-left: 4em;
-  margin-right: 4em;
-  margin-bottom: 10em;
-  float: left;
-  border:solid;
-  border-left: 0;
-  border-right: 0;
-  width:40%;
-  height:60%;
-  
-}
+    <!-- <img src="profile.JPG" alt="Profile" class="img-circle" style="width:60px;height:60px;"> -->
+    <!-- <img src="copyright.png" alt="copyright" style="width:">  -->
+    <h6> &copy; Matthew Daniel King </h6>
+  </footer>
 
+</div>
+</body>
 
-#middle {
-  flex-grow: 1;
-  order:1;
-  color:black;
-  font-family:Arial;
-  font-weight:bold;
-  font-size:14px;
-  text-align:center;
-}
-
-#bottom {
-  flex-grow: 1;
-  order:2;
-  color:white;
-  font-family:Arial;
-  font-weight:bold;
-  font-size:14px;
-}
-
-img[alt="Profile"] {
-  border-radius: 60px;
-}
-
-
-#about {
-  position: absolute;
-  border: solid;
-  border-left: 0;
-  border-right: 0;
-  right:0;
-  margin-top: 4em;
-  margin-right: 4em;
-  height: 400px;
-  width: 600px;
-  background-color: white;
-  opacity: 0.99;
-  color:black;
-}
-
-#contacts {
-  position: absolute;
-  right: 0;
-  margin-right: 4em;
-  text-align: center;
-  height:300px;
-  width: 800px;
-}
-
-.contactitem {
-  float: left;
-  margin-left: 3em;
-  margin-right: 2em;
-}
-
-#header {
-  display: inline;
-  background: white;
-  height: 80px;
-  opacity: 0.95;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-#name {
-  height:100px;
-}
-
-#name h1 {
-  text-align: center;
-  vertical-align: text-top;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight:bold;
-  font-size:34px;
-  letter-spacing: 2em;
-  font-weight: bold;
-}
-
-/*#menu {
-  float: left;
-}*/
-
-ul {
-  display: inline;
-  list-style-type: none;
-}
-
-li {
-  float: right;
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-li a {
-  text-decoration: none;
-  color: black;
-  padding: 2em;
-}
-
-footer {
-  position:absolute;
-  bottom:0;
-  margin-bottom: -100px;
-  background-color: black;
-  opacity: 0.95;
-  height:100px;
-  width: 100%;
-  text-align:center;
-} 
-
-footer h6 {
-  text-align: center;
-  color:white;
-  font-size: 16px;
-}
+</html>
