@@ -1,19 +1,37 @@
-#main {
-  display:flex;
-  flex-direction:row;
-  justify-content:center;
-  height:auto;
-  border:4px;
-  font-family:Arial;
-  font-weight:bold;
-  font-size:14px;
+body {
+  background-attachment: scroll;
+  padding: 0;
+  margin: 0;
 }
 
-#left {
-  float:left;
-  width:0px;
+#wrapper {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  position:relative;
+}
+
+
+#content {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: url(wall.jpg);
+  background-size: cover;
+  border: solid;
+  height: 1800px;
+  margin: 0;
+  width: auto;
+  margin-bottom: 100px;
+}
+
+#tags {
+  text-align: center;
+}
+
+#top {
+  flex-grow: 0.2;
   order:0;
-  background-color:white;
   color:white;
   text-align:center;
   font-family:Arial;
@@ -22,10 +40,49 @@
 
 }
 
+.title {
+  display:block;
+  font-size: 20px;
+}
+
+.title h1 {
+  color:white;
+  font-weight: bold;
+  font-size: 44px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+div p {
+  margin: 4em 2em;
+  font-size: 16px;
+  line-height: 2em;
+}
+
+#projects {
+  margin: 4em auto;
+  height: 400px;
+  width: 90%;
+  background-color: white;
+  border: solid;
+  opacity: 0.99;
+  color:black;
+}
+
+.projitem {
+  margin: 0 auto;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 10em;
+  float: left;
+  border:solid;
+  width:40%;
+  height:60%;
+}
+
+
 #middle {
-  flex-grow:10;
+  flex-grow: 1;
   order:1;
-  background-color: #f2f2f2;
   color:black;
   font-family:Arial;
   font-weight:bold;
@@ -33,11 +90,9 @@
   text-align:center;
 }
 
-#right {
-  float:right;
-  width:0px;
+#bottom {
+  flex-grow: 1;
   order:2;
-  background-color: white;
   color:white;
   font-family:Arial;
   font-weight:bold;
@@ -48,62 +103,92 @@ img[alt="Profile"] {
   border-radius: 60px;
 }
 
-#bg-image {
-  background: url(grafitti.JPG);
-  background-size: cover;
-  height:800px;
-  position:relative;
-}
-
-/*#bg-image img {
-  display:block;
-  max-width:100%;
-  height:auto;
-}*/
 
 #about {
-  position:absolute;
-  top: 10em;
-  right: 10em;
-  bottom:20em;
-  height:auto;
-  width: 400px;
+  position: absolute;
+  border: solid;
+  right:0;
+  margin-top: 4em;
+  margin-right: 4em;
+  height: 400px;
+  width: 600px;
   background-color: white;
-  opacity: 60%;
+  opacity: 0.99;
   color:black;
 }
 
-
-#header {
-  background-color:white;
-  height:80px;
+#contacts {
+  position: absolute;
+  right: 0;
+  margin-right: 4em;
+  text-align: center;
+  height:300px;
+  width: 800px;
 }
 
-#header h1 {
+.contactitem {
+  float: left;
+  margin-left: 3em;
+  margin-right: 2em;
+}
+
+#header {
+  display: inline;
+  background: white;
+  height: 80px;
+  opacity: 0.95;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#name {
+  height:100px;
+}
+
+#name h1 {
   text-align: center;
+  vertical-align: text-top;
   font-family: Helvetica, Arial, sans-serif;
   font-weight:bold;
   font-size:34px;
-  text-align: center;
+  letter-spacing: 2em;
+  font-weight: bold;
 }
 
-#header h4 {
-  text-align: right;
-  font-size: 16px;
-  margin-bottom: 10px;
-  margin-right: 0;
+/*#menu {
+  float: left;
+}*/
+
+ul {
+  display: inline;
+  list-style-type: none;
 }
 
-#footer {
-  clear:both;
-  background-color: #cccccc;
+li {
+  float: right;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  padding: 2em;
+}
+
+footer {
+  position:absolute;
+  bottom:0;
+  margin-bottom: -100px;
+  background-color: black;
+  opacity: 0.95;
   height:100px;
-  text-align:right;
-  vertical-align: middle;
-  padding-right: 40px;
-  padding-top: 20px;
-  color:white;
-  font-family:Arial;
-  font-weight:bold;
-  font-size:14px;
+  width: 100%;
+  text-align:center;
 } 
+
+footer h6 {
+  text-align: center;
+  color:white;
+  font-size: 16px;
+}
